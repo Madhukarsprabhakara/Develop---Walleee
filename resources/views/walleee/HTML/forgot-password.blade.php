@@ -824,7 +824,8 @@
 <!-- include custom script for site  -->
 <script src="http://localhost/assets/js/script.js"></script>
 </body>
-<>
+</body>
+</html>
 
 
 
