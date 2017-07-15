@@ -19,8 +19,8 @@
     <!-- Just for debugging purposes. -->
     <!-- html5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
-    <script src="http://localhost/https://oss.maxcdn.com/libs5shiv/3.7.0/html5shiv.js"></script>
-    <script src="http://localhost/https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <script src="https://oss.maxcdn.com/libs5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
 
     <!-- include pace script for automatic web page progress bar  -->
@@ -793,7 +793,7 @@
 ================================================== -->
 
 <!-- Placed at the end of the document so the pages load faster -->
-<script src="http://localhost/https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js">
 </script>
 <script src="http://localhost/assets/bootstrap/js/bootstrap.min.js"></script>
 <!-- include  parallax plugin -->
@@ -816,7 +816,7 @@
 <script src="http://localhost/assets/js/owl.carousel.min.js"></script>
 
 <!-- jQuery select2 // custom select   -->
-<script src="http://localhost/http://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/js/select2.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/js/select2.min.js"></script>
 
 <!-- include touchspin.js // touch friendly input spinner component   -->
 <script src="http://localhost/assets/js/bootstrap.touchspin.js"></script>
