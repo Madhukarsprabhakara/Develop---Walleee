@@ -21,7 +21,7 @@ class Leaderboards extends Migration
             $table->timestamp('creation_time');
             $table->timestamp('start_time');
             $table->timestamp('end_time');
-            $table->timestamp('total_time');
+            $table->integer('total_time')->nullable();
             $table->timestamps();
         });
     }

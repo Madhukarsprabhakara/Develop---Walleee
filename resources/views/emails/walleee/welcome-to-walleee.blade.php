@@ -2,15 +2,16 @@
 # Hello {{$user->name}},
 {{csrf_field()}}
 
-A warm welcome from everyone at team WALLEEE.
+A warm welcome from everyone at  Walleee.
 
 
 WALLEEE is a unique marketplace where people could save money toward buying different products. 
 We built this marketplace in order to help people buy products using their own money rather than relying on credit which adds up to the financial stress people are in already.
 
-What do I gain by saving up on WALLEEE?
+What do I gain by saving up on Walleee?
 
-We incentivize people for saving up by marking down prices of the products they wish to buy.
+There is a huge benefit in using our platform: You avoid all the stress that comes with using credit cards. No transaction fees, no hidden charges, no interest payments!
+Isn't this good enugh for you to start?
 
 What is the advantage?
 

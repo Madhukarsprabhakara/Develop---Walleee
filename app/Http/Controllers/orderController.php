@@ -46,11 +46,11 @@ class orderController extends Controller
         
        //echo $data['CSRF'];
         $current_date = Carbon::now();
-        $end_date = Carbon::now()->addDays($data['nodays']);
+        $end_date = Carbon::parse($data['nodays']);
 		
 		
 		$total_no_days = $end_date->diffInDays($current_date);
-        $total_no_days = $data['nodays'];
+        //$total_no_days = $data['nodays'];
         $total_amount = $product->price;
         $remaining_amount = $total_amount;
         
@@ -140,11 +140,14 @@ class orderController extends Controller
         		$discountAmount = 15*($total/100);
         		$totalWithDiscount = $total - $discountAmount;
         		//echo $total;
+        		$user = \Auth::user();
+    			$userName = $user->name;
         		return view('walleee/html/cart',compact('userCartProducts','productImage'))
         										->with('total',$total)	
         										->with('totalAmtPDay',$totalAmtPDay)
         										->with('discountAmount',$discountAmount)
-        										->with('totalWithDiscount',$totalWithDiscount);
+        										->with('totalWithDiscount',$totalWithDiscount)
+        										->with('name',$userName);
         										//->with('productImage',$productImage->image);
         	}		
     	}

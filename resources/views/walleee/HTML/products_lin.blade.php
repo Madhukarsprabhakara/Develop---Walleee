@@ -9,8 +9,8 @@
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://localhost/assets/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="http://localhost/walleee/html/ico/apple-touch-icon-57-precomposed.png">
     <link rel="shortcut icon" href="http://localhost/assets/ico/favicon.png">
-    <title>WALLEEE - Save - Buy - Save again!</title>
-    <!-- Bootstrap core CSS -->
+     <title>WALLEEE - It pays to plan!</title>
+	<!-- Bootstrap core CSS -->
     <link href="http://localhost/assets/bootstrap/css/bootstrap.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
@@ -149,6 +149,7 @@
     <!-- /.modal-dialog -->
 
 </div>
+
 
 <!--Electronics-->
 <div class="modal categorySelect  fade modal-sm" id="electronics" tabindex="-1" role="dialog">
@@ -566,7 +567,7 @@
             <div class="col-lg-6 col-sm-6 col-xs-6 col-md-6 no-margin no-padding">
                     <div class="pull-right">
                         <ul class="userMenu">
-                            <li><a href="http://localhost/walleee/html/account-1"><span class="hidden-xs"> My Account</span> <i
+                            <li><a href="http://localhost/walleee/html/create-account"><span class="hidden-xs"> My Account</span> <i
                                     class="glyphicon glyphicon-user hide visible-xs "></i></a></li>
 
 
@@ -607,7 +608,7 @@
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-cart"><i
                     class="fa fa-shopping-cart colorWhite"> </i> <span
                     class="cartRespons colorWhite"> Cart ($210.00) </span></button>
-            <a class="navbar-brand " href="http://localhost"> <img src="http://localhost/images/logo.png" alt="TSHOP"> </a>
+            <a class="navbar-brand " href="http://localhost/aboutus"> <img src="http://localhost/images/logo.png" alt="TSHOP"> </a>
 
             <!-- this part for mobile -->
             <div class="search-box pull-right hidden-lg hidden-md hidden-sm">
@@ -1230,6 +1231,11 @@
                     </div>
  ~~>
  -->
+
+<div class="page-header">
+ 	<h3>Please select one of the product categories from below, if you are unsure just choose "other" </h3>
+</div>
+
         <div class="row subCategoryList clearfix">
                 <div class="col-lg-2 col-md-2 col-sm-3 col-xs-4  text-center ">
                     <div class="thumbnail equalheight"><a class="subCategoryThumb" data-toggle="modal" data-dismiss="modal" href="#electronics"><img
@@ -1494,7 +1500,7 @@
     	var totalPrice = $('#'+totalpriceid).val();
     	console.log('total price' + totalPrice);
     	var newPerDayPrice = totalPrice / noofdays;
-    	newPerDayPrice = Math.round(newPerDayPrice)
+    	newPerDayPrice = Math.round(newPerDayPrice);
     	console.log('new per day price' + newPerDayPrice);
     	$('#'+perdaypriceid).val(newPerDayPrice);
     	
@@ -1508,5 +1514,3 @@
 
 </body>
 </html>
-
-

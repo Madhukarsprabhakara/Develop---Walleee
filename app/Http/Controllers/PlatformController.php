@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\product_categories;
 use App\product_sub_categories;
 use App\user_carts;
+use App\leaderboards;
 class PlatformController extends Controller
 {
     //
@@ -101,6 +102,14 @@ class PlatformController extends Controller
     }
     public function joinCampaign()
     {
-    	return view('walleee/html/campaigncontrol');
+    	if($id=\Auth::id())
+    	{
+    		$leaderboard = leaderboards::where('id',$id)->first();
+    		return view('walleee/html/campaigncontrol', compact('leaderboard'));
+    	}
+    	else
+    	{
+    		return view('walleee/html/create-account');
+    	}
     }
 }

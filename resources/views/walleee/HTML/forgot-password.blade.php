@@ -157,19 +157,21 @@
                 <div class="col-lg-6 col-sm-6 col-xs-6 col-md-6">
                     <div class="pull-left ">
                         <ul class="userMenu ">
-                            <li><a href="http://localhost/walleee/html/#"> <span class="hidden-xs">HELP</span><i
+                           <!-- 
+ <li><a href="http://localhost/walleee/html/#"> <span class="hidden-xs">HELP</span><i
                                     class="glyphicon glyphicon-info-sign hide visible-xs "></i> </a></li>
                             <li class="phone-number"><a href="http://localhost/walleee/html/callto:+12025550151"> <span> <i
                                     class="glyphicon glyphicon-phone-alt "></i></span> <span class="hidden-xs"
                                                                                              style="margin-left:5px"> +1-202-555-0151 </span>
                             </a></li>
+ -->
                         </ul>
                     </div>
                 </div>
                 <div class="col-lg-6 col-sm-6 col-xs-6 col-md-6 no-margin no-padding">
                     <div class="pull-right">
                         <ul class="userMenu">
-                            <li><a href="http://localhost/walleee/html/account-1"><span class="hidden-xs"> My Account</span> <i
+                            <li><a href="http://localhost/walleee/html/create-account"><span class="hidden-xs"> My Account</span> <i
                                     class="glyphicon glyphicon-user hide visible-xs "></i></a></li>
                             <li><a href="http://localhost/walleee/html/#" data-toggle="modal" data-target="#ModalLogin"> <span class="hidden-xs">Sign In</span>
                                 <i class="glyphicon glyphicon-log-in hide visible-xs "></i> </a></li>
@@ -192,7 +194,7 @@
                     class="fa fa-shopping-cart colorWhite"> </i> <span
                     class="cartRespons colorWhite"> Cart ($210.00) </span></button>
             
-            <a class="navbar-brand " href="http://localhost/walleee/html/index"> <img src="http://localhost/images/logo.png" alt="WALLEEE"> </a>
+            <a class="navbar-brand " href="http://localhost/aboutus"> <img src="http://localhost/images/logo.png" alt="WALLEEE"> </a>
 
             <!-- this part for mobile -->
             <div class="search-box pull-right hidden-lg hidden-md hidden-sm">
@@ -331,7 +333,7 @@
 
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="http://localhost/walleee/html/#"> Home </a></li>
+                <li class="active"><a href="http://localhost/aboutus"> Home </a></li>
                 <li class="dropdown megamenu-fullwidth"><!-- 
 <a data-toggle="dropdown" class="dropdown-toggle" href="http://localhost/walleee/html/#"> New
                     Products <b class="caret"> </b> </a>
@@ -770,7 +772,7 @@
                 </form>
                     <div class="clear clearfix">
                         <ul class="pager">
-                            <li class="previous pull-right"><a href="http://localhost/walleee/html/account-1"> &larr; Back to Login </a></li>
+                            <li class="previous pull-right"><a href="http://localhost/walleee/html/create-account"> &larr; Back to Login </a></li>
                         </ul>
                     </div>
                 </div>

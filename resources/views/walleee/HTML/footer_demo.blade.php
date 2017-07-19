@@ -95,15 +95,15 @@
         <div class="container">
             <p class="pull-left"> &copy; Walleee 2017. All right reserved. </p>
 
-            <div class="pull-right paymentMethodImg"><img height="30" class="pull-right"
-                                                          srv="http://localhost/images/site/payment/master_card.png" alt="img"> <img
-                    height="30" class="pull-right" srv="http://localhost/images/site/payment/visa_card.png" alt="img"><img height="30"
+             <div class="pull-right paymentMethodImg"><img height="30" class="pull-right"
+                                                          src="http://localhost/images/site/payment/master_card.png" alt="img"> <img
+                    height="30" class="pull-right" src="http://localhost/images/site/payment/visa_card.png" alt="img"><img height="30"
                                                                                                           class="pull-right"
-                                                                                                          srv="http://localhost/images/site/payment/paypal.png"
+                                                                                                          src="http://localhost/images/site/payment/paypal.png"
                                                                                                           alt="img">
-                <img height="30" class="pull-right" srv="http://localhost/images/site/payment/american_express_card.png" alt="img"> <img
-                        height="30" class="pull-right" srv="http://localhost/images/site/payment/discover_network_card.png" alt="img">
-                <img height="30" class="pull-right" srv="http://localhost/images/site/payment/google_wallet.png" alt="img">
+                <img height="30" class="pull-right" src="http://localhost/images/site/payment/american_express_card.png" alt="img"> <img
+                        height="30" class="pull-right" src="http://localhost/images/site/payment/discover_network_card.png" alt="img">
+                <img height="30" class="pull-right" src="http://localhost/images/site/payment/google_wallet.png" alt="img">
 
             </div>
         </div>

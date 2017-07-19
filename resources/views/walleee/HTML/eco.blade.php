@@ -1,20 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Fav and touch icons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://localhost/assets/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://localhost/assets/ico/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://localhost/assets/ico/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="http://localhost/walleee/html/ico/apple-touch-icon-57-precomposed.png">
-    <link rel="shortcut icon" href="http://localhost/assets/ico/favicon.png">
-    <title>WALLEEE - Save - Buy - Save again! </title>
-    <!-- Bootstrap core CSS -->
-    <link href="http://localhost/assets/bootstrap/css/bootstrap.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="http://localhost/assets/css/style.css" rel="stylesheet">
+@include('walleee.html.walleee-header')
 
     <!-- Just for debugging purposes. -->
     <!-- html5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -161,11 +145,13 @@
                 <div class="col-lg-6 col-sm-6 col-xs-6 col-md-6">
                     <div class="pull-left ">
                         <ul class="userMenu ">
-                            <li><a href="http://localhost/walleee/html/#"> <span class="hidden-xs">HELP</span><i
+                            <!-- 
+<li><a href="http://localhost/walleee/html/#"> <span class="hidden-xs">HELP</span><i
                                     class="glyphicon glyphicon-info-sign hide visible-xs "></i> </a></li>
                             <li class="phone-number"><a href="http://localhost/walleee/html/callto:+12025550151"> <span> <i
                                     class="glyphicon glyphicon-phone-alt "></i></span> <span class="hidden-xs"
                                                                                              style="margin-left:5px"> +1-202-555-0151 </span>
+ -->
                             </a></li>
                         </ul>
                     </div>
@@ -337,8 +323,9 @@
 
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-                <li><a href="http://localhost/walleee/html/index"> Home </a></li>
-                <li class="dropdown megamenu-fullwidth"><a data-toggle="dropdown" class="dropdown-toggle" href="http://localhost/walleee/html/#"> New
+                <li><a href="http://localhost"> Home </a></li>
+                <!-- 
+<li class="dropdown megamenu-fullwidth"><a data-toggle="dropdown" class="dropdown-toggle" href="http://localhost/walleee/html/#"> New
                     Products <b class="caret"> </b> </a>
                     <ul class="dropdown-menu">
                         <li class="megamenu-content ">
@@ -374,13 +361,13 @@
                     </ul>
                 </li>
 
-                <!-- change width of megamenu = use class > megamenu-fullwidth, megamenu-60width, megamenu-40width -->
+                <!~~ change width of megamenu = use class > megamenu-fullwidth, megamenu-60width, megamenu-40width ~~>
                 <li class="dropdown active megamenu-80width "><a data-toggle="dropdown" class="dropdown-toggle"
                                                                  href="http://localhost/walleee/html/#"> SHOP <b class="caret"> </b> </a>
                     <ul class="dropdown-menu">
                         <li class="megamenu-content">
 
-                            <!-- megamenu-content -->
+                            <!~~ megamenu-content ~~>
 
                             <ul class="col-lg-2  col-sm-2 col-md-2  unstyled noMarginLeft">
                                 <li>
@@ -440,9 +427,9 @@
                     <ul class="dropdown-menu">
                         <li class="megamenu-content ProductDetailsList">
 
-                            <!-- remove .ProductDetailsList class from megamenu-content || this class for demo uses only -->
+                            <!~~ remove .ProductDetailsList class from megamenu-content || this class for demo uses only ~~>
 
-                            <!-- megamenu-content -->
+                            <!~~ megamenu-content ~~>
 
                             <h3 class="promo-1 no-margin hidden-xs">60 + html PAGES || AVAILABLE ONLY AT WRAP
                                 BOOTSTRAP </h3>
@@ -566,14 +553,17 @@
                     </ul>
                 </li>
 				<li><a href="http://localhost/walleee/html/all-page-link" target="_blank"> All Page Link </a></li>
+ -->
             </ul>
             </ul>
 
             <!--- this part will be hidden for mobile version -->
             <div class="nav navbar-nav navbar-right hidden-xs">
-                <div class="dropdown  cartMenu "><a href="http://localhost/walleee/html/#" class="dropdown-toggle" data-toggle="dropdown"> <i
-                        class="fa fa-shopping-cart"> </i> <span class="cartRespons"> Cart ($210.00) </span> <b
+                <div class="dropdown  cartMenu "><!-- 
+<a href="http://localhost/walleee/html/#" class="dropdown-toggle" data-toggle="dropdown"> <i
+                        class="fa fa-shopping-cart"> </i> <span class="cartRespons"> Cart ($21.00) </span> <b
                         class="caret"> </b> </a>
+ -->
 
                     <div class="dropdown-menu col-lg-4 col-xs-12 col-md-4 ">
                         <div class="w100 miniCartTable scroll-pane">
@@ -698,10 +688,12 @@
                 </div>
                 <!--/.cartMenu-->
 
-                <div class="search-box">
+                <!-- 
+<div class="search-box">
                     <div class="input-group">
                         <button class="btn btn-nobg getFullSearch" type="button"><i class="fa fa-search"> </i></button>
                     </div>
+ -->
                     <!-- /input-group -->
 
                 </div>
@@ -1159,6 +1151,8 @@
                         	<div class="action-control"><a id="pro" href="#"  class="btn btn-primary"> <span class="add2cart"><i
                                 class="glyphicon glyphicon-shopping-cart"> </i> Add to cart </span> </a></div>
                                 <input type="hidden" id="_token" name="_token" value="{{{ csrf_token() }}}" />
+                                <input type="hidden" id="ids" name="ids" value="{{\Auth::id()}}" />
+                                
                                 
                                
                                 
@@ -1615,186 +1609,7 @@
 <!-- /.modal -->
 <!-- End Modal -->
 
-<footer>
-    <div class="footer" id="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3  col-md-3 col-sm-4 col-xs-6">
-                    <h3>
-                        Support
-                    </h3>
-                    <ul>
-                        <li class="supportLi">
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur
-                            </p>
-                            <h4>
-
-                                <a class="inline" href="http://localhost/walleee/html/callto:+12025550151">
-                                    <strong>
-                                        <i class="fa fa-phone">
-                                        </i> +1-202-555-0151 </strong>
-                                </a>
-                            </h4>
-                            <h4>
-                                <a class="inline" href="http://localhost/walleee/html/mailto:help@yourweb.com">
-                                    <i class="fa fa-envelope-o">
-                                    </i>
-                                    help@walleee.com
-                                </a>
-                            </h4>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
-                    <h3> Shop </h3>
-                    <ul>
-                        <li><a href="http://localhost/walleee/html/index"> Home </a></li>
-                        <li><a href="http://localhost/walleee/html/category"> Category </a></li>
-                        <li><a href="http://localhost/walleee/html/category2"> Category Style 2 [Parallax] </a></li>
-                        <li><a href="http://localhost/walleee/html/sub-category"> Sub Category </a></li>
-
-                    </ul>
-                </div>
-                <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
-                    <h3>
-                        Information
-                    </h3>
-                    <ul>
-                        <li><a href="http://localhost/walleee/html/product-details"> Product Details </a></li>
-                        <li><a href="http://localhost/walleee/html/product-details-style2"> Product Details Version 2 </a></li>
-                        <li><a href="http://localhost/walleee/html/cart"> Cart </a></li>
-                        <li><a href="http://localhost/walleee/html/about-us-3"> About us </a></li>
-                        <li><a href="http://localhost/walleee/html/about-us-2">
-                            About us 2
-                        </a>
-
-                        </li>
-                        <li><a href="http://localhost/walleee/html/contact-us">
-                            Contact us
-                        </a>
-
-                        </li>
-                        <li><a href="http://localhost/walleee/html/contact-us-2">
-                            Contact us 2
-                        </a>
-
-                        </li>
-                        <li><a href="http://localhost/walleee/html/terms-conditions">
-                            Terms &amp; Conditions
-                        </a>
-
-                        </li>
-
-                    </ul>
-                </div>
-                <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
-                    <h3>
-                        My Account
-                    </h3>
-                    <ul>
-                        <li><a href="http://localhost/walleee/html/account-1">
-                            Account Login
-                        </a>
-
-                        </li>
-                        <li><a href="http://localhost/walleee/html/account">
-                            My Account
-                        </a>
-
-                        </li>
-                        <li><a href="http://localhost/walleee/html/my-address">
-                            My Address
-                        </a>
-
-                        </li>
-                        <li><a href="http://localhost/walleee/html/wishlist">
-                            Wish List
-                        </a>
-
-                        </li>
-                        <li><a href="http://localhost/walleee/html/order-list"> Order list </a></li>
-                        <li><a href="http://localhost/walleee/html/order-status"> Order Status </a></li>
-
-                    </ul>
-                </div>
-                <div class="col-lg-3  col-md-3 col-sm-6 col-xs-12 ">
-                    <h3>
-                        Stay in touch
-                    </h3>
-                    <ul>
-                        <li>
-                            <div class="input-append newsLatterBox text-center">
-                                <input type="text" class="full text-center" placeholder="Email ">
-                                <button class="btn  bg-gray" type="button">
-                                    Subscribe
-                                    <i class="fa fa-long-arrow-right">
-
-                                    </i>
-                                </button>
-                            </div>
-                        </li>
-                    </ul>
-                    <ul class="social">
-                        <li><a href="http://localhost/walleee/html/http://facebook.com">
-                            <i class=" fa fa-facebook">
-                                &nbsp;
-                            </i>
-                        </a>
-                        </li>
-                        <li><a href="http://localhost/walleee/html/http://twitter.com">
-                            <i class="fa fa-twitter">
-                                &nbsp;
-                            </i>
-                        </a>
-                        </li>
-                        <li><a href="http://localhost/walleee/html/https://plus.google.com">
-                            <i class="fa fa-google-plus">
-                                &nbsp;
-                            </i>
-                        </a>
-                        </li>
-                        <li><a href="http://localhost/walleee/html/http://youtube.com">
-                            <i class="fa fa-pinterest">
-                                &nbsp;
-                            </i>
-                        </a>
-                        </li>
-                        <li><a href="http://localhost/walleee/html/http://youtube.com">
-                            <i class="fa fa-youtube">
-                                &nbsp;
-                            </i>
-                        </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="footer-bottom">
-        <div class="container">
-            <p class="pull-left">
-                &copy; WALLEEE 2017. All right reserved.
-            </p>
-
-            <div class="pull-right paymentMethodImg"><img height="30" class="pull-right"
-                                                          src="http://localhost/images/site/payment/master_card.png" alt="img"> <img
-                    height="30" class="pull-right" src="http://localhost/images/site/payment/visa_card.png" alt="img"><img height="30"
-                                                                                                          class="pull-right"
-                                                                                                          src="http://localhost/images/site/payment/paypal.png"
-                                                                                                          alt="img">
-                <img height="30" class="pull-right" src="http://localhost/images/site/payment/american_express_card.png" alt="img"> <img
-                        height="30" class="pull-right" src="http://localhost/images/site/payment/discover_network_card.png" alt="img">
-                <img height="30" class="pull-right" src="http://localhost/images/site/payment/google_wallet.png" alt="img">
-
-            </div>
-
-
-        </div>
-    </div>
-</footer>
-
-
+@include('walleee.html.footer_demo')
 <!-- Le javascript
 ================================================== -->
 
@@ -1884,6 +1699,11 @@
 $(function(){
 
 $('.add2cart').on('click',function(e){
+
+	var ids = $('#ids').val();
+		if(ids === ''){ 
+			alert("Please login to add items to cart"); 
+		}
     $.ajaxSetup({
         header:$('meta[name="_token"]').attr('content')
     })
@@ -1891,6 +1711,7 @@ $('.add2cart').on('click',function(e){
 
         $.ajax({
 
+		
         type:"GET",
         url:'http://localhost/addtocart',
         data: { id: {{\Auth::id()}}, product_id: {{$product->product_id}}, perdayprice:$('#perdayprice').val(), nodays:$('#nodays').val(), CSRF:$('#_token').val() },
