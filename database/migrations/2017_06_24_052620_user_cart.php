@@ -32,6 +32,7 @@ class UserCart extends Migration
             $table->double('remaining_amount');
             $table->integer('no_of_days');
             $table->string('product_image');
+            $table->integer('threshold')->nullable();
             $table->bigInteger('epoch_start');
             $table->bigInteger('epoch_end');
             $table->timestamps();

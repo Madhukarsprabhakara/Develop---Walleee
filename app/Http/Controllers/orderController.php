@@ -56,7 +56,7 @@ class orderController extends Controller
         
         $amount_per_day = $total_amount / $total_no_days;
 		$amount_per_day=round($amount_per_day);
-		$remaining_days = $total_no_days;
+		$remaining_days = $total_no_days -1;
 		
 		$cart->product_id = $product -> product_id;
 		$cart->product_details = $product->description;
@@ -66,7 +66,7 @@ class orderController extends Controller
 		$cart->quantity = 1;
 		$cart -> amount_per_day = $amount_per_day;
 		$cart -> by_when = $end_date;
-		$cart->amount_saved = 0;
+		$cart->amount_saved = $amount_per_day;
 		$cart->days_remaining = $remaining_days;
 		$cart->remaining_amount = $remaining_amount;
 		$cart->no_of_days = $total_no_days;
@@ -192,7 +192,7 @@ class orderController extends Controller
         
        	 	$amount_per_day = $total_amount / $total_no_days;
 			$amount_per_day=round($amount_per_day);
-			$remaining_days = $total_no_days;
+			$remaining_days = $total_no_days -1;
 		
 			$cart->product_id = $product -> product_id;
 			$cart->product_details = $product->description;
@@ -202,7 +202,7 @@ class orderController extends Controller
 			$cart->quantity = 1;
 			$cart -> amount_per_day = $amount_per_day;
 			$cart -> by_when = $end_date;
-			$cart->amount_saved = 0;
+			$cart->amount_saved = $amount_per_day;
 			$cart->days_remaining = $remaining_days;
 			$cart->remaining_amount = $remaining_amount;
 			$cart->no_of_days = $total_no_days;
@@ -263,4 +263,10 @@ class orderController extends Controller
     {
         //
     }
+    public function testemail()
+    {
+    			$user = \Auth::user();
+				dispatch(new SendSaveEmail($user));
+    }
+    
 }

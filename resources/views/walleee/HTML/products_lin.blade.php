@@ -175,7 +175,7 @@
                     	<label>By when do you want the product delivered?</label>
                         <input name="byWhen" id="byWhen_electronics" class="form-control input byWhen" size="20"
                                placeholder="mm/dd/yyyy" type="date" required>
-                               <input type="hidden" name="product_id" value="3" />
+                               <input type="hidden" name="product_id" value="2" />
                     </div>
                     
                 </div>
@@ -240,7 +240,7 @@
                     	<label>By when do you want the product delivered?</label>
                         <input name="byWhen" id="byWhen_bike" class="form-control input byWhen" size="20"
                                placeholder="mm/dd/yyyy" type="date" required>
-                               <input type="hidden" name="product_id" value="4" />
+                               <input type="hidden" name="product_id" value="3" />
                     </div>
                     
                 </div>
@@ -306,7 +306,7 @@
                     	<label>By when do you want the product delivered?</label>
                         <input name="byWhen" id="byWhen_gameconsole" class="form-control input byWhen" size="20"
                                placeholder="mm/dd/yyyy" type="date" required>
-                               <input type="hidden" name="product_id" value="5" />
+                               <input type="hidden" name="product_id" value="4" />
                     </div>
                     
                 </div>
@@ -371,7 +371,7 @@
                     	<label>By when do you want the product delivered?</label>
                         <input name="byWhen" id="byWhen_mobilephone" class="form-control input byWhen" size="20"
                                placeholder="mm/dd/yyyy" type="date" required>
-                               <input type="hidden" name="product_id" value="6" />
+                               <input type="hidden" name="product_id" value="5" />
                     </div>
                     
                 </div>
@@ -436,7 +436,7 @@
                     	<label>By when do you want the product delivered?</label>
                         <input name="byWhen" id="byWhen_handt" class="form-control input byWhen" size="20"
                                placeholder="mm/dd/yyyy" type="date" required>
-                               <input type="hidden" name="product_id" value="7" />
+                               <input type="hidden" name="product_id" value="6" />
                     </div>
                     
                 </div>
@@ -501,7 +501,7 @@
                     	<label>By when do you want the product delivered?</label>
                         <input name="byWhen" id="byWhen_other" class="form-control input byWhen" size="20"
                                placeholder="mm/dd/yyyy" type="date" required>
-                               <input type="hidden" name="product_id" value="8" />
+                               <input type="hidden" name="product_id" value="7" />
                     </div>
                     
                 </div>
@@ -748,6 +748,8 @@
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
                 <li class="active"><a href="http://localhost/aboutus"> Home </a></li>
+                <li ><a href="http://localhost/ourpillars"> Campaign </a></li>
+                <li ><a href="http://localhost/walleee/html/blog"> Social </a></li>
               <!--  <li class="dropdown megamenu-fullwidth"><a data-toggle="dropdown" class="dropdown-toggle" href="http://localhost/walleee/html/#"> New
                     Products <b class="caret"> </b> </a>
                     <ul class="dropdown-menu">

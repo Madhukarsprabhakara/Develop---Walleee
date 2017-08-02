@@ -354,6 +354,7 @@
             <ul class="nav navbar-nav">
                 <li class="active"><a href="http://localhost/aboutus"> Home </a></li>
                 <li ><a href="http://localhost/ourpillars"> Campaign </a></li>
+                <li ><a href="http://localhost/walleee/html/blog"> Social </a></li>
               <!--  <li class="dropdown megamenu-fullwidth"><a data-toggle="dropdown" class="dropdown-toggle" href="http://localhost/walleee/html/#"> New
                     Products <b class="caret"> </b> </a>
                     <ul class="dropdown-menu">

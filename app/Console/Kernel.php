@@ -14,7 +14,10 @@ class Kernel extends ConsoleKernel
      */
     protected $commands = [
         //
-        \App\Console\Commands\SendEveningEmail::class,
+        \App\Console\Commands\SortLeaderBoard::class,
+        //\App\Console\Commands\SendEveningEmail::class,
+        \App\Console\Commands\DailySavingsCompute::class,
+        \App\Console\Commands\DispatchThresholdEmails::class
     ];
 
     /**
@@ -27,7 +30,9 @@ class Kernel extends ConsoleKernel
     {
         // $schedule->command('inspire')
         //          ->hourly();
-        $schedule->command('email:sendEvening')->everyMinute();
+        $schedule->command('Sort:leaderboard')->everyTenMinutes()->withoutOverlapping();
+        //$schedule->command('Dispatch:ThresholdEmails')->everyTenMinutes()->withoutOverlapping();
+        //$schedule->command('DailySavings:Compute')->everyTenMinutes()->withoutOverlapping();
         
     }
 

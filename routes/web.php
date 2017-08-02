@@ -27,7 +27,7 @@ Route::get('/aboutus','PlatformController@aboutUs');
 Route::get('/account','PlatformController@account');
 Route::get('/cart','orderController@show');
 Route::get('/addtocart','orderController@store');
-
+Route::get('/testemail','orderController@testemail');
 Route::post('/addtocartd','orderController@stored');
 
 Route::get('/category/{prod_cat_id}/scategory/{prod_subcat_id}','categoryController@getProducts');
@@ -43,6 +43,8 @@ Route::get('/login','SessionsController@create');
 Route::post('/sessions','SessionsController@createSession');
 Route::get('/whoami','SessionsController@knowMe');
 Route::get('/logout','SessionsController@destroy');
+
+
 
 //Route::get('/users/{id}/{flag}', 'UsersController@SavingsInfo');
 Route::get('/loggedin','PlatformController@loggedInPage');

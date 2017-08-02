@@ -303,7 +303,9 @@ class ComposerStaticInita4782947a1449524e54335f4bfafb258
     );
 
     public static $classMap = array (
+        'App\\Console\\Commands\\DispatchThresholdEmails' => __DIR__ . '/../..' . '/app/Console/Commands/DispatchThresholdEmails.php',
         'App\\Console\\Commands\\SendEveningEmail' => __DIR__ . '/../..' . '/app/Console/Commands/SendEveningEmail.php',
+        'App\\Console\\Commands\\SortLeaderBoard' => __DIR__ . '/../..' . '/app/Console/Commands/SortLeaderBoard.php',
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
         'App\\Http\\Controllers\\Auth\\ForgotPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ForgotPasswordController.php',
@@ -332,8 +334,10 @@ class ComposerStaticInita4782947a1449524e54335f4bfafb258
         'App\\Http\\Middleware\\VerifyCsrfToken' => __DIR__ . '/../..' . '/app/Http/Middleware/VerifyCsrfToken.php',
         'App\\Jobs\\SendEmails' => __DIR__ . '/../..' . '/app/Jobs/SendEmails.php',
         'App\\Jobs\\SendSaveEmail' => __DIR__ . '/../..' . '/app/Jobs/SendSaveEmail.php',
+        'App\\Jobs\\SendThresholdEmails' => __DIR__ . '/../..' . '/app/Jobs/SendThresholdEmails.php',
         'App\\Mail\\GetSavingsData' => __DIR__ . '/../..' . '/app/Mail/GetSavingsData.php',
         'App\\Mail\\RemindSave' => __DIR__ . '/../..' . '/app/Mail/RemindSave.php',
+        'App\\Mail\\ThresholdEmail' => __DIR__ . '/../..' . '/app/Mail/ThresholdEmail.php',
         'App\\Mail\\WelcomeToWalleee' => __DIR__ . '/../..' . '/app/Mail/WelcomeToWalleee.php',
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
         'App\\Providers\\AuthServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AuthServiceProvider.php',
@@ -352,7 +356,6 @@ class ComposerStaticInita4782947a1449524e54335f4bfafb258
         'Carbon\\Carbon' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/Carbon.php',
         'Carbon\\CarbonInterval' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/CarbonInterval.php',
         'Carbon\\Exceptions\\InvalidDateException' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/Exceptions/InvalidDateException.php',
-        'ChangeLeaderboards' => __DIR__ . '/../..' . '/database/migrations/2017_07_15_230250_change_leaderboards.php',
         'CreateFailedJobsTable' => __DIR__ . '/../..' . '/database/migrations/2017_07_10_041557_create_failed_jobs_table.php',
         'CreateJobsTable' => __DIR__ . '/../..' . '/database/migrations/2017_07_10_035000_create_jobs_table.php',
         'CreatePasswordResetsTable' => __DIR__ . '/../..' . '/database/migrations/2014_10_12_100000_create_password_resets_table.php',

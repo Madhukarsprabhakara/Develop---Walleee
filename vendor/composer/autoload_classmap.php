@@ -6,7 +6,9 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'App\\Console\\Commands\\DispatchThresholdEmails' => $baseDir . '/app/Console/Commands/DispatchThresholdEmails.php',
     'App\\Console\\Commands\\SendEveningEmail' => $baseDir . '/app/Console/Commands/SendEveningEmail.php',
+    'App\\Console\\Commands\\SortLeaderBoard' => $baseDir . '/app/Console/Commands/SortLeaderBoard.php',
     'App\\Console\\Kernel' => $baseDir . '/app/Console/Kernel.php',
     'App\\Exceptions\\Handler' => $baseDir . '/app/Exceptions/Handler.php',
     'App\\Http\\Controllers\\Auth\\ForgotPasswordController' => $baseDir . '/app/Http/Controllers/Auth/ForgotPasswordController.php',
@@ -35,8 +37,10 @@ return array(
     'App\\Http\\Middleware\\VerifyCsrfToken' => $baseDir . '/app/Http/Middleware/VerifyCsrfToken.php',
     'App\\Jobs\\SendEmails' => $baseDir . '/app/Jobs/SendEmails.php',
     'App\\Jobs\\SendSaveEmail' => $baseDir . '/app/Jobs/SendSaveEmail.php',
+    'App\\Jobs\\SendThresholdEmails' => $baseDir . '/app/Jobs/SendThresholdEmails.php',
     'App\\Mail\\GetSavingsData' => $baseDir . '/app/Mail/GetSavingsData.php',
     'App\\Mail\\RemindSave' => $baseDir . '/app/Mail/RemindSave.php',
+    'App\\Mail\\ThresholdEmail' => $baseDir . '/app/Mail/ThresholdEmail.php',
     'App\\Mail\\WelcomeToWalleee' => $baseDir . '/app/Mail/WelcomeToWalleee.php',
     'App\\Providers\\AppServiceProvider' => $baseDir . '/app/Providers/AppServiceProvider.php',
     'App\\Providers\\AuthServiceProvider' => $baseDir . '/app/Providers/AuthServiceProvider.php',
@@ -55,7 +59,6 @@ return array(
     'Carbon\\Carbon' => $vendorDir . '/nesbot/carbon/src/Carbon/Carbon.php',
     'Carbon\\CarbonInterval' => $vendorDir . '/nesbot/carbon/src/Carbon/CarbonInterval.php',
     'Carbon\\Exceptions\\InvalidDateException' => $vendorDir . '/nesbot/carbon/src/Carbon/Exceptions/InvalidDateException.php',
-    'ChangeLeaderboards' => $baseDir . '/database/migrations/2017_07_15_230250_change_leaderboards.php',
     'CreateFailedJobsTable' => $baseDir . '/database/migrations/2017_07_10_041557_create_failed_jobs_table.php',
     'CreateJobsTable' => $baseDir . '/database/migrations/2017_07_10_035000_create_jobs_table.php',
     'CreatePasswordResetsTable' => $baseDir . '/database/migrations/2014_10_12_100000_create_password_resets_table.php',

@@ -813,7 +813,8 @@
                         <tbody>
                         @foreach ($AllPillars as $pillar) 
                         
-                        <?php
+                        <!-- 
+<?php
                         
                         if ($pillar->created_at == $pillar->updated_at) 
                         {
@@ -828,13 +829,14 @@
                         	$total_no_hours = $end_date->diffInHours($current_date);
                         }
                         ?>
+ -->
         	
 <!-- 			{{$end_date = \Carbon\Carbon::parse($pillar->updated_at)}} -->
 		
 			
                         <tr>
                         	<td>{{$pillar->name}}</td>
-                        	<td>{{$total_no_hours}}</td>
+                        	<td>{{$pillar->total_time}}</td>
                            
                             <td>{{$pillar->created_at}}</td>
                             <td><span class="label label-success">Active</span>
@@ -979,10 +981,11 @@
  -->
                         </tbody>
                     </table>
+                    
                 </div>
 
                 <div style="clear:both"></div>
-
+                
                 <div class="col-lg-12 clearfix">
                     <ul class="pager">
                         <li class="previous pull-right"><a href="http://localhost/productsd_lin"> <i class="fa fa-home"></i> Go to Shop </a>
@@ -990,6 +993,9 @@
                         <li class="next pull-left"><a href="http://localhost/walleee/html/account"> &larr; Back to My Account</a></li>
                     </ul>
                 </div>
+                <div class="gap"></div>
+
+<div class="fb-comments" data-href="http://localhost/ourpillars" data-width="800" data-numposts="10"></div>
             </div>
             <!--/row end-->
 
@@ -1008,6 +1014,14 @@
 <!-- Le javascript
 ================================================== -->
 
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9&appId=113220239304261";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 <!-- Placed at the end of the document so the pages load faster -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js">
 </script>

@@ -67,12 +67,13 @@ class RegistrationController extends Controller
 		$pillars->creation_time = $creationdatetime;
 		$pillars->start_time = $creationdatetime;
 		$pillars->end_time = $creationdatetime;
-		$pillars->total_time = $creationdatetime;
+		$pillars->total_time = 0;
 		
 		$pillars->save();
 		
+		dispatch(new SendEmails($user));
 		//$job=new SendEmails(\Mail::to($user->email)->send(new WelcomeToWalleee($user)));
-		\Mail::to($user->email)->queue(new WelcomeToWalleee($user));
+		
 		//$this->dispatch($job);
 		return response()->json(['responseText' => $user1->name ], 200);
 		//\Mail::to($user1->email)->send(new RemindSave($user1));
